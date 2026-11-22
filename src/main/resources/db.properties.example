@@ -1,0 +1,9 @@
+# Copy file nay thanh db.properties (cung thu muc) roi sua cho dung may minh.
+# db.properties da nam trong .gitignore nen mat khau khong bi day len GitHub.
+
+# mock = dung du lieu gia (khong can SQL Server) ; jdbc = ket noi SQL Server that
+app.mode=mock
+
+db.url=jdbc:sqlserver://localhost:1433;databaseName=DatVeXemPhim;encrypt=true;trustServerCertificate=true
+db.user=sa
+db.password=doi_mat_khau_o_day
