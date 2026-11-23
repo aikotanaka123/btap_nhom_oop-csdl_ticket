@@ -108,7 +108,7 @@ public final class MockData {
             int loai = h == soHang - 1 ? 3 : (h >= soHang - 3 ? 2 : 1);
             int soGheHang = loai == 3 ? soCot / 2 : soCot;
             for (int c = 1; c <= soGheHang; c++) {
-                GHE.put(maGhe, new Ghe(maGhe, ma, LOAI_GHE.get(loai), (char) ('A' + h), c));
+                GHE.put(maGhe, Ghe.taoGhe(maGhe, ma, LOAI_GHE.get(loai), (char) ('A' + h), c));
                 maGhe++;
             }
         }
